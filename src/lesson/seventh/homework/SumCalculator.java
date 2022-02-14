@@ -7,15 +7,15 @@ public class SumCalculator {
         boolean menuRepeat = true;
 
         do {
-
             System.out.println("Please enter the first number");
-            Scanner inputFirstNum = new Scanner(System.in);
-            int firstNum = inputFirstNum.nextInt();
+            Scanner input = new Scanner(System.in);
+            int firstNum = input.nextInt();
+
+            input.close();
 
             System.out.println("Please enter the second number");
-            Scanner inputSecondNum = new Scanner(System.in);
-            int secondNum = inputSecondNum.nextInt();
-
+            Scanner input2 = new Scanner(System.in);
+            int secondNum = input2.nextInt();
 
             int sum = firstNum + secondNum;
             System.out.println("The sum is " + sum);
@@ -24,15 +24,15 @@ public class SumCalculator {
             Scanner userInput = new Scanner(System.in);
             String result = userInput.nextLine();
 
+
             if (result.equals("N")){
                 menuRepeat = false;
             }
 
 
 
-        } while (menuRepeat == true);
+        } while (menuRepeat);
 
         System.out.println("Shutting down");
-
-        }
     }
+}
