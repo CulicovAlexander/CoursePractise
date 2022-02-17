@@ -18,9 +18,8 @@ public class BackwardsReader {
             String backwardText=String.valueOf(forward);
             char backward [];
             backward = backwardText.toCharArray();
-            int z = backward.length - 1;
 
-            for (int num = z; num >= 0; num--) {
+            for (int num = backward.length - 1; num >= 0; num--) {
 
                 System.out.print(backward[num]);
 
