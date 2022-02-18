@@ -1,4 +1,4 @@
-package lesson.eighth.homework;
+package lesson.eighth8.homework;
 import java.util.Arrays;
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package lesson.fifth.homework;
+package lesson.fifth5.homework;
 import java.util.Scanner;
 import java.lang.Math;
 

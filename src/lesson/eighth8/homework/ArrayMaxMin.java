@@ -1,9 +1,8 @@
-package lesson.eighth.homework;
+package lesson.eighth8.homework;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayIntroduction {
+public class ArrayMaxMin {
     public static void main(String[] args) {
 
         System.out.println("Please introduce the size of the array");
@@ -16,7 +15,22 @@ public class ArrayIntroduction {
             System.out.println("Please introduce the variable number " + num);
             usersArray[num] = inputSize.nextInt();
         }
-        System.out.println("The array is " + Arrays.toString(usersArray));
-        inputSize.close();
+        int max = 0;
+
+        for (int j : usersArray) {
+            if (j > max) {
+                max = j;
+            }
+        }
+
+        int min = usersArray[0];
+
+        for (int j : usersArray) {
+            if (j < min) {
+                min = j;
+            }
+        }
+        System.out.println("The maximum value is - " + max);
+        System.out.println("The minimum value is - " + min);
     }
 }
