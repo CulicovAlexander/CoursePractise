@@ -7,20 +7,14 @@ public class LogIn {
 
         final String pass = "Pa55word";
 
-        char arrayPass [];
-        arrayPass  = pass.toCharArray();
-
         for(int i = 0; i < 3; i++){
 
             System.out.println("Please enter the password");
             Scanner input = new Scanner(System.in);
             String usersPass = input.nextLine();
 
-            char arrayUsersPass[];
-            arrayUsersPass = usersPass.toCharArray();
 
-
-        if(Arrays.equals(arrayUsersPass, arrayPass)){
+            if(pass.equals(usersPass)){
             System.out.println("Access granted");
             break;
         } else {
