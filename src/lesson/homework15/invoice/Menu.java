@@ -29,8 +29,7 @@ public class Menu {
                 obj.setQty(prodQty);
 
                 System.out.println("Please introduce the product description");
-                Scanner input1 = new Scanner(System.in);
-                String prodDes = input1.nextLine();
+                String prodDes = input.next();
                 obj.setProductDescription(prodDes);
 
                 System.out.println("Please introduce product's price");
@@ -38,8 +37,7 @@ public class Menu {
                 obj.setPrice(prodPrice);
 
                 System.out.println("Please introduce the device model");
-                Scanner input2 = new Scanner(System.in);
-                String devMod = input2.nextLine();
+                String devMod = input.next();
                 obj.setDeviceModel(devMod);
 
                 prodList.add(new Invoice(devMod, prodDes, prodQty, prodPrice));
