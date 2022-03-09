@@ -35,5 +35,7 @@ public class DataCalculator {
 
         System.out.println(Period.between(localDate1,localDate2));
 
+        input.close();
+
     }
 }
